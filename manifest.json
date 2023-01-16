@@ -1,0 +1,26 @@
+{
+  "name": "TimerCRX",
+  "description": "Timer Chrome Extension",
+  "version": "0.0.2",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "action_icon.png",
+      "24": "action_icon.png",
+      "32": "action_icon.png"
+    },
+    "default_title": "Press to open Timer CRX",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

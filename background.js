@@ -22,4 +22,10 @@ chrome.alarms.onAlarm.addListener((alarm) => {
   chrome.action.setBadgeText({ text: `X${time}` }, () => {
     console.log("Setting badge 123");
   });
+  if (time % 2 == 0) {
+    this.registration.showNotification("Timer Notify 123", {
+      body: `Time has been set to ${time}`,
+      icon: "action_icon.png",
+    });
+  }
 });
